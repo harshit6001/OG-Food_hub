@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>project-3</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<style>
+*{margin:0px; padding:0px}
+
+
+@keyframes yea{
+0%{color:green;
+background-color:pink;
+font-size:80px}
+
+25%{color:pink;
+background-color:green;
+font-size:80px}
+
+50%{color:green;
+background-color:pink;
+font-size:80px}
+
+75%{color:pink;
+background-color:green;
+font-size:80px}
+
+100%{color:green;
+background-color:pink;
+font-size:80px}
+}
+
+#bgi{background-image:url("./vegetables-set-left-black-slate.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;}
+
+#project{display:flex;
+justify-content:space-between;
+color:white;
+padding:8px 0px;
+align-items:center;
+position:sticky; top:0px; bottom:0; right:0; left:0;
+z-index:999999}
+
+#project .logo img{justify-content:top;
+align-items:top;
+padding-left:5px}
+
+.menu ul li{display:inline-block;
+justify-content:right;
+padding:8.5px;
+cursor:pointer}
+
+.menu ul li b{color:white}
+
+.menu ul li button a{color:black}
+
+#project .menu b:hover{color:#fae6c4;
+transition:ease all .3s;
+background-color:white;
+color:grey;
+padding:8px;
+border:2px solid black}
+
+.menu ul li button{padding:10px}
+
+.start{padding:15px;
+font-size:25px;
+color:white;}
+
+.start h1{margin-top:15px}
+
+.start button{background-color:green;
+color:white;
+border:0px;
+margin-top:15px;
+padding:11px 8px}
+
+.start button:hover{color:#fae6c4;
+transition:ease all .3s;
+background-color:white;
+color:black;}
+
+.offer{text-align:center; 
+display:flex; 
+flex-wrap:wrap; 
+justify-content:center;}
+
+.offer img{height:auto; 
+margin:30px 10px; 
+padding:0px;
+width:25%;}
+
+.products{text-align:center;}
+
+.products .category{text-align:center;
+display:flex;
+cursor:pointer;
+justify-content:center;
+align-items:center;
+padding:8px}
+
+.products h2{padding:15px;
+font-size:15px;}
+
+#item{height:auto;
+text-align:center;
+display:flex;
+flex-wrap:wrap;
+font-size:13px;
+text-align:center;
+justify-content:center;}
+
+.items{height:auto;
+color:black;
+width:20%;
+padding-bottom:10px;
+margin:10px;
+cursor:pointer;
+border:2px solid #D3D3D3}
+
+#item .items img{width:270px}
+
+#item .items p{font-size:20px;
+color:green}
+
+.category h2:hover{color:green}
+
+#item .items i{color:orange}
+
+.items:hover{background-color:#EBE1CE}
+
+#honey{display:flex;
+margin-top:15px;
+background-color:#FBF8E5;
+padding:55px 0px 15px 0px}
+
+#honey .hot h1{color:green;
+align-items:center;
+font-size:15px}
+
+#honey .hot h2{font-size:40px;
+margin-bottom:8px}
+
+#honey .hot .time span{
+height: 25px;
+width: 25px;
+background-color: white;
+color:black;
+font-size:30px;
+margin:25px 8px;
+padding:5px;
+border-radius: 50%;}
+
+#honey .hot button{color:white;
+background-color:green;
+padding:8px;
+cursor:pointer;
+margin-top:30px}
+
+.f-products{text-align:center;
+margin-bottom:30px}
+
+.ending img{width:270px;
+padding:12px;}
+
+.ending h4{color:green;
+margin:50px 0px 25px 0px}
+
+.ending h1{margin-bottom:25px;}
+
+.ending{text-align:center;
+background-color:#FBF8E5;
+padding-top:15px}
+
+.ending marquee{
+    direction: inherit;
+    behavior: inherit;
+}
+
+#honey button:hover{color:white;
+background-color:black;
+border:2px solid black}
+
+#blogs{height:auto;
+text-align:center;
+display:flex;
+flex-wrap:wrap;
+font-size:13px;
+text-align:center;
+justify-content:center;}
+
+#blogs .items img{width:99%}
+
+#blogs .items p{font-size:20px;
+color:green}
+
+.bs h1{margin:15px 0px 7.5px 0px;
+text-align:center;
+justify-content:center}
+
+#blogs .items i{color:green;
+margin-left:15px;
+margin-right:2px;
+}
+
+#blogs .items{
+box-shadow:4px 5px 12px 0px grey}
+
+#blogs .by{font-size:12px;
+justify-content:left;
+text-align:left}
+
+#item .items img{width:270px}
+
+#blogs .items p{font-size:22px;
+text-align:left;
+margin:10px 0px 10px 5px;
+color:black}
+
+#blogs .date{margin:10px 0px 0px 0px;
+text-align:left;
+color:green}
+
+#blogs .date label{margin-left:75px;
+text-align:left}
+
+#last{margin-top: 60px;
+margin-left: 40px;
+margin-right: 40px;
+padding-top: 35px;
+padding-bottom: 35px;
+padding-right: 30px;
+border: 1px solid grey;}
+
+.last-text{display: flex;
+justify-content: center;
+justify-content: space-between;}
+
+.last-1{display: flex;
+justify-content: center;
+position: relative;
+padding-left: 30px;
+padding-right: 30px;}
+
+.last-1 img{width: 45%;
+padding-top: 30px;
+padding-right: 20px;}
+
+.last-1 h1{padding-bottom: 9px;}
+
+.last-1::before{content: '';
+width: 2px;
+height: 80%;
+background: linear-gradient(to right, rgb(193, 187, 187), #a3b5b7);
+position: absolute;
+right: 10px;
+top: 12px;}
+   
+.last-2{display: flex;
+justify-content: center;}
+
+.last-2 img{width: 45%;
+padding-top: 30px;
+padding-right: 20px;}
+
+.last-2 h1{padding-bottom: 9px;}
+
+#ending{margin-top: 50px;
+margin-bottom: 50px;
+padding: 60px 35px;
+justify-content: center;
+justify-content: space-between;
+background-color: rgb(252, 247, 231);}
+
+.ending-text{display: flex;}
+
+.ending-1{padding-right: 25px;}
+
+.ending-1 h1{font-size: 21px;
+font-weight: 600;
+font-family: sans-serif;
+padding-bottom: 15px;}
+
+.ending-1 p{padding: 8px;}
+
+.ending-1 i{padding-top: 8px;
+padding-right: 8px;}
+
+.ending-1 i:hover{background-color: rgb(213, 188, 158);
+border-radius: 100px;
+padding: 8px;}
+
+.ending-1 ol li{padding: 11px 0px;
+font-family: sans-serif;
+font-size: 14px;}
+
+.ending-1 ol li img{width: 75%;}
+
+.ending-1 ol li input{padding: 8px 85px 8px 2px;}
+
+
+
+@media screen and (max-width:1250px){
+*{margin:0px; padding:0px}
+
+#project{display:block;
+position:non-sticky}
+
+.menu ul li{justify-content:center;
+padding:8.5px;}
+
+.offer img{display:block;
+width:100%;
+margin:30px 0px;
+box-shadow:5px 5px 5px black;}
+
+.offer{display:block;}
+
+.items{width:auto;}
+
+.ending img marquee{width:50%}
+
+#honey{display:block;
+padding-left:5px}
+
+#honey .hot h2{font-size:30px;
+margin-bottom:8px}
+
+.last-1::before{width:0px}
+
+#honey .image-honey img{width:90%}
+
+.products .category{display:block}
+
+.last-text{display: block;}
+
+.ending-text{display: block;}
+
+.ending-1 ol li input{padding: 8px 40px 8px 2px;}
+}
+
+</style>
+<section id="bgi">
+<section id="project">
+<div class="logo">
+<img src="logo-2.png"></img>
+</div>
+<div class="menu">
+<ul>
+<li><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><b>Home+</a></b></li>
+<li><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><b>About+</a></b></li>
+<li><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><b>Shop+</a></b></li>
+<li><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><b>News+</a></b></li>
+<li><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><b>Pages+</a></b></li>
+<li><button style=background-color:#90EE90><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html">GET A QUOTE</a></button></li>
+<li><button><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><i class="fas fa-search"></i></a></button></li>
+<li><button><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><i class="fas fa-user"></i></a></button></li>
+<li><button><a href="file:///C:/Users/lenovo/Desktop/me%20class/ADMISSION/Admission%20form%20new.html"><i class="fas fa-cart-plus"></i></a></button></li>
+</ul>
+</div>
+</section>
+
+
+<div class="start">
+<p><img src="1(1).png"></img>100% genuine products</p>
+<h1>Tasty & Healthy <br>Organic Food</h1>
+<p>Buy anything from here,<br>use and then review,<br>full organic food with great packing.</p>
+<button>EXPLORE PRODUCTS</button>
+</div>
+</section>
+<div class="offer">
+<img src="1.jpg">
+<img src="2.jpg">
+<img src="1.jpg">
+</div>
+
+<div class="products">
+<h1>OUR PRODUCTS</h1>
+<div class="category">
+<p><h2>FOOD & DRINKS</h2>
+<h2>VEGETABLES</h2>
+<h2>DRIED FOODS</h2>
+<h2>BREAD & CAKE</h2>
+<h2>FISH & MEAT</h2></p>
+</div>
+</div>
+
+<section id="item">
+<div class="items">
+<img src="11.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>CARROTS GROUP SCAL </h1>
+<p>$32.00  <strike>$46.00</strike></p>
+</div>
+<div class="items">
+<img src="12.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>CARROTS GROUP SCAL </h1>
+<p>$32.00  <strike>$46.00</strike></p>
+</div>
+<div class="items">
+<img src="13(1).png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>ORANGE FRESH JUICE </h1>
+<p>$75.00  <strike>$92.00</strike></p>
+</div>
+<div class="items">
+<img src="14(1).png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>POLTARY FARM MEET </h1>
+<p>$78.00  <strike>$85.00</strike></p>
+</div>
+<div class="items">
+<img src="7.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>POLTARY FARM MEET </h1>
+<p>$78.00  <strike>$85.00</strike></p>
+</div>
+<div class="items">
+<img src="8.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>ORANGE SLICED MIX </h1>
+<p>$150.00  <strike>$180.00</strike></p>
+</div>
+
+<div class="items">
+<img src="9.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>CARROTS GROUP SCAL </h1>
+<p>$32.00  <strike>$46.00</strike></p>
+</div>
+<div class="items">
+<img src="10.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>ORANGE FRESH JUICE </h1>
+<p>$75.00  <strike>$92.00</strike></p>
+</div>
+</section>
+
+<section id="honey">
+<div class="image-honey">
+<img src="11(1).png">
+</div>
+<div class="hot">
+<h1>TODAY'S HOT DEALS</h1>
+<h2>Original Stock Honey<br>Combo Package</h2>
+<div class="time">
+<span>00</span>
+<span>00</span>
+<span>00</span>
+<span>00</span>
+</div>
+<button>SHOP NOW</button>
+</div>
+</section>
+
+<div class="f-products">
+<h1>FEATURED PRODUCTS</h1>
+</div>
+
+<section id="item">
+<div class="items">
+<img src="1.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>CARROTS GROUP SCAL </h1>
+<p>$32.00  <strike>$46.00</strike></p>
+</div>
+<div class="items">
+<img src="2.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>RED HOT TOMATO </h1>
+<p>$25.00  <strike>$35.00</strike></p>
+</div>
+<div class="items">
+<img src="3.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>ORANGE FRESH JUICE </h1>
+<p>$75.00  <strike>$92.00</strike></p>
+</div>
+<div class="items">
+<img src="4.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>POLTARY FARM MEAT </h1>
+<p>$75.00  <strike>$85.00</strike></p>
+</div>
+<div class="items">
+<img src="5.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>FRESH BUTTER CAKE</h1>
+<p>$150.00  <strike>$180.00</strike></p>
+</div>
+<div class="items">
+<img src="6.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>ORANGE SLICED MIX </h1>
+<p>$150.00  <strike>$180.00</strike></p>
+</div>
+<div class="items">
+<img src="7.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>ORANGE FRESH JUICE</h1>
+<p>$75.00  <strike>$92.00</strike></p>
+</div>
+<div class="items">
+<img src="8.png"></img><br>
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+<h1>POLTARY FARM MEAT</h1>
+<p>$78.00  <strike>$85.00</strike></p>
+</div>
+</section>
+
+<div class="ending">
+<h4>//PORTFOLIO</h4>
+<h1>WE HAVE DONE.</h1>
+
+<marquee><img src="./2(1).jpg">
+<img src="1(2).jpg">
+<img src="2(1).jpg"></marquee>
+</div>
+
+<div class="bs">
+<h1>Latest Blogs</h1>
+</div>
+
+<section id="blogs">
+<div class="items">
+<img src="1(2).jpg"></img><br>
+<div class="by">
+<i class="fas fa-user"></i>by:admin <i class="fas fa-tags"></i>Services
+</div>
+<p>Common Engine Oil Problems and Solutions</p>
+<hr>
+<div class="date">
+<i class="far fa-calendar-alt"></i>June 29,2023 <label>READ MORE</label>
+</div>
+</div>
+<div class="items">
+<img src="2(1).jpg"></img><br>
+<div class="by">
+<i class="fas fa-user"></i>by:admin <i class="fas fa-tags"></i>Services
+</div>
+<p>How and when to replace brake rotors</p>
+<hr>
+<div class="date">
+<i class="far fa-calendar-alt"></i>July 1,2023 <label>READ MORE</label>
+</div>
+</div>
+<div class="items">
+<img src="3.jpg"></img><br>
+<div class="by">
+<i class="fas fa-user"></i>by:admin <i class="fas fa-tags"></i>Services
+</div>
+<p>Elenance, Servicing and Repairs</p>
+<hr>
+<div class="date">
+<i class="far fa-calendar-alt"></i>June 5,2023 <label>READ MORE</label>
+</div>
+</div>
+</section>
+
+<section id="last">
+<div class="last-text">
+<div class="last-1">
+<div>
+<img src="11(2).png" alt=""> 
+</div>
+<div>
+<h1>Curated Products</h1>
+<p>Provide Curated <br>Products for all produts <br> over $100</p>
+</div>
+</div>
+<div class="last-1">
+<div>
+<img src="12(1).png" alt=""> 
+</div>
+<div>
+<h1>Handmade </h1>
+<p>We ensure the product <br> quality that is our main <br>goal</p>
+</div>
+</div>
+<div class="last-1">
+<div>
+<img src="13(2).png" alt=""> 
+</div>
+<div>
+<h1>Natural Food</h1>
+<p>Return Product within 3 <br> days for any Product you <br> buy</p>
+</div>
+</div>
+<div class="last-2">
+<div>
+<img src="14(2).png" alt=""> 
+</div>
+<div>
+<h1>Free Home Delivery</h1>
+<p>We ensure the product <br>quality that you can trust <br>easily</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ending">
+<div class="ending-text">
+<div class="ending-1">
+<img src="logo.png" alt="">
+<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.  <br>Quibusdam excepturi accusantium <br> doloribus quae quod suscipit <br> esse ea nisi?</p>
+<p><i class="fas fa-map-marker-alt"></i> &nbsp; Brooklyn, New York, United States</p>
+<p><i class="fas fa-phone"></i> &nbsp; +123-456789</p>
+<p><i class="fas fa-envelope"></i> &nbsp; example@example.com</p>
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-invision"></i>
+<i class="fab fa-youtube"></i>
+</div>
+<div class="ending-1">
+<h1>Company</h1>
+<ol style="list-style: none;">
+<li>About</li>
+<li>Blog</li>
+<li>All Products</li>
+<li>Locations Map</li>
+<li>FAQ</li>
+<li>Contact Us</li>
+</ol>
+</div>
+<div class="ending-1">
+<h1>Services</h1>
+<ol style="list-style: none;">
+<li>Order Tracking</li>
+<li>Wishlist</li>
+<li>Login</li>
+<li>My Account</li>
+<li>Terms And Conditions</li>
+<li>Promotional Offers</li>
+</ol>
+</div>
+<div class="ending-1">
+<h1>Customer Care</h1>
+<ol style="list-style: none;">
+<li>Login</li>
+<li>My Account</li>
+<li>Wishlist</li>
+<li>Order Tracking</li>
+<li>FAQ</li>
+<li>Contact Us</li>
+</ol>
+</div>
+<div class="ending-1">
+<h1>Newsletter</h1>
+<ol style="list-style: none;">
+<li>Subscribe to our weekly Newsletter and <br> receive updates via email</li>
+<li> <input type="email" placeholder="Enter E-mail"></li>
+<li> We Accept</li>
+<li> <img src="payment.png" alt=""></li>
+</ol>
+</div>
+</div>
+</section>
+</body>
+</html>
